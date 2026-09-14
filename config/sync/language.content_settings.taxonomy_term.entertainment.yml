@@ -1,0 +1,16 @@
+uuid: 4f184d74-a43f-4821-85bc-8ab0f2807aa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.entertainment
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.entertainment
+target_entity_type_id: taxonomy_term
+target_bundle: entertainment
+default_langcode: site_default
+language_alterable: false

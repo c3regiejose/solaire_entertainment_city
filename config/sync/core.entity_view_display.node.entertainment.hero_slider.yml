@@ -1,0 +1,32 @@
+uuid: 59e35274-162c-470d-a71d-d36422cab0f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.hero_slider
+    - field.field.node.entertainment.field_category
+    - field.field.node.entertainment.field_teaser_summary
+    - node.type.entertainment
+  module:
+    - text
+    - user
+id: node.entertainment.hero_slider
+targetEntityType: node
+bundle: entertainment
+mode: hero_slider
+content:
+  field_teaser_summary:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_category: true
+  langcode: true

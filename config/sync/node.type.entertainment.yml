@@ -1,0 +1,17 @@
+uuid: bc91212c-4fc9-4e07-9cc1-761038501201
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Entertainment
+type: entertainment
+description: "Use <em>Entertainment</em> for showcasing a featured artist or entertainers under a certain <strong>Dining's page</strong> (e.g. DJs, In house musicians, singers, etc.)"
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

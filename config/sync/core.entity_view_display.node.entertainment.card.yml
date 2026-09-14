@@ -1,0 +1,32 @@
+uuid: b9f06439-b2d0-4533-9a54-5a56c6242887
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.entertainment.field_category
+    - field.field.node.entertainment.field_teaser_summary
+    - node.type.entertainment
+  module:
+    - text
+    - user
+id: node.entertainment.card
+targetEntityType: node
+bundle: entertainment
+mode: card
+content:
+  field_teaser_summary:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_category: true
+  langcode: true

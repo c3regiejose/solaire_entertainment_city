@@ -1,0 +1,31 @@
+uuid: 867b1bdb-04b4-4843-99a9-f763832e0b55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.entertainment.field_category
+    - field.field.node.entertainment.field_teaser_summary
+    - node.type.entertainment
+  module:
+    - text
+    - user
+id: node.entertainment.default
+targetEntityType: node
+bundle: entertainment
+mode: default
+content:
+  field_teaser_summary:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_category: true
+  langcode: true
