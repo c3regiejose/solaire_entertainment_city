@@ -53,13 +53,23 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
+      {% set promotions = '' %}
+      {% set slidesPerView = 3 %}
+
+      {% for item in promotion_items %}
+        {% set promotion_item %}
+          <div class="swiper-slide"> {{ item }} </div>
+        {% endset %}
+        {% set promotions = promotions ~ promotion_item %}
+      {% endfor %}
+
       <div class="section-header {{ textAlignment }}">
         <h2>{{ content.field_title }}</h2>
         {{ content.field_content }}
       </div>
       
       {% embed 'solaire_sec:swiper' with {
-        cardItem: content.field_referenced_content_items,
+        cardItem: promotions,
         slidesPerView: slidesPerView
       } %}
 
