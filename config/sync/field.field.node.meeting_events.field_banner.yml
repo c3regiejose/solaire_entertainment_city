@@ -1,0 +1,100 @@
+uuid: 743d3b1d-f8f0-4ed2-ad11-de04c9a99c05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner
+    - node.type.meeting_events
+    - paragraphs.paragraphs_type.main_banner
+  module:
+    - entity_reference_revisions
+id: node.meeting_events.field_banner
+field_name: field_banner
+entity_type: node
+bundle: meeting_events
+label: Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      main_banner: main_banner
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 9
+        enabled: false
+      accordion_items:
+        weight: 26
+        enabled: false
+      banner:
+        weight: 4
+        enabled: false
+      block:
+        weight: 11
+        enabled: false
+      block_views:
+        weight: 29
+        enabled: false
+      highlight_card_item:
+        weight: 31
+        enabled: false
+      highlight_cards:
+        weight: 30
+        enabled: false
+      icon_card_item:
+        weight: 33
+        enabled: false
+      icon_cards:
+        weight: 32
+        enabled: false
+      image_and_text:
+        weight: 34
+        enabled: false
+      image_gallery:
+        weight: 35
+        enabled: false
+      image_gallery_items:
+        weight: 36
+        enabled: false
+      information_block:
+        weight: 5
+        enabled: false
+      main_banner:
+        weight: 6
+        enabled: true
+      promotion_items:
+        weight: 16
+        enabled: false
+      promotions:
+        weight: 15
+        enabled: false
+      side_by_side_content:
+        weight: 41
+        enabled: false
+      tabs_content_by_reference:
+        weight: 42
+        enabled: false
+      tabs_content_by_reference_items:
+        weight: 43
+        enabled: false
+      tabs_content_by_view:
+        weight: 44
+        enabled: false
+      tabs_content_by_view_items:
+        weight: 45
+        enabled: false
+      testimonial_card_item:
+        weight: 47
+        enabled: false
+      testimonial_cards:
+        weight: 46
+        enabled: false
+      webform_block:
+        weight: 48
+        enabled: false
+field_type: entity_reference_revisions

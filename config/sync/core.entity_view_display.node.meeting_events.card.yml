@@ -1,22 +1,22 @@
-uuid: b9f06439-b2d0-4533-9a54-5a56c6242887
+uuid: 3b98482b-aa7b-4637-bf67-385fcde41ff3
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.card
-    - field.field.node.entertainment.field_banner
-    - field.field.node.entertainment.field_category
-    - field.field.node.entertainment.field_mobile_thumbnail
-    - field.field.node.entertainment.field_section
-    - field.field.node.entertainment.field_teaser_summary
-    - node.type.entertainment
+    - field.field.node.meeting_events.field_banner
+    - field.field.node.meeting_events.field_hide_banner
+    - field.field.node.meeting_events.field_mobile_thumbnail
+    - field.field.node.meeting_events.field_section
+    - field.field.node.meeting_events.field_teaser_summary
+    - node.type.meeting_events
   module:
     - image
     - text
     - user
-id: node.entertainment.card
+id: node.meeting_events.card
 targetEntityType: node
-bundle: entertainment
+bundle: meeting_events
 mode: card
 content:
   field_mobile_thumbnail:
@@ -39,7 +39,7 @@ content:
     region: content
 hidden:
   field_banner: true
-  field_category: true
+  field_hide_banner: true
   field_section: true
   langcode: true
   links: true
