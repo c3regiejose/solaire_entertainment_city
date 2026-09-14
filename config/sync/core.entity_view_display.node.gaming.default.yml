@@ -33,14 +33,7 @@ third_party_settings:
         link_custom: ''
     regions:
       ds_content:
-        - node_title
         - field_section
-    fields:
-      node_title:
-        plugin_id: node_title
-        weight: 0
-        label: hidden
-        formatter: default
 id: node.gaming.default
 targetEntityType: node
 bundle: gaming
@@ -53,7 +46,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: ds_content
 hidden:
   field_banner: true
