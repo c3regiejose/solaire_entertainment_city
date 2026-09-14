@@ -1,0 +1,16 @@
+uuid: 74adb0f8-9e77-471f-b5e7-f80f860e293e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.entertainment
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.entertainment
+target_entity_type_id: node
+target_bundle: entertainment
+default_langcode: site_default
+language_alterable: false

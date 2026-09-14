@@ -1,0 +1,9 @@
+uuid: 77adbab8-3b60-4afe-952a-08c1594df410
+langcode: en
+status: true
+dependencies: {  }
+name: Entertainment
+vid: entertainment
+description: null
+weight: 0
+new_revision: false
