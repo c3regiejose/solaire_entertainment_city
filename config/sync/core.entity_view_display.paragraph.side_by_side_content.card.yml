@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.card
     - field.field.paragraph.side_by_side_content.field_class
+    - field.field.paragraph.side_by_side_content.field_content
     - field.field.paragraph.side_by_side_content.field_id
     - field.field.paragraph.side_by_side_content.field_left_content
     - field.field.paragraph.side_by_side_content.field_right_content
@@ -27,6 +28,7 @@ content:
     region: content
 hidden:
   field_class: true
+  field_content: true
   field_id: true
   field_left_content: true
   field_right_content: true

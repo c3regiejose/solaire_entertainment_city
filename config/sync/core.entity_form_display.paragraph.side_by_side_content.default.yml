@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.side_by_side_content.field_class
+    - field.field.paragraph.side_by_side_content.field_content
     - field.field.paragraph.side_by_side_content.field_id
     - field.field.paragraph.side_by_side_content.field_left_content
     - field.field.paragraph.side_by_side_content.field_right_content
@@ -23,6 +24,14 @@ content:
     region: content
     settings:
       size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_content:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 3
       placeholder: ''
     third_party_settings: {  }
   field_id:
