@@ -1,0 +1,22 @@
+uuid: cecc55a1-e4b8-4918-a2f4-1b9323a0523f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_summary
+    - node.type.meeting_events
+  module:
+    - text
+id: node.meeting_events.field_teaser_summary
+field_name: field_teaser_summary
+entity_type: node
+bundle: meeting_events
+label: 'Teaser Summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

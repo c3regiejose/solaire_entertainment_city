@@ -1,0 +1,21 @@
+uuid: c12949da-078e-440f-a96d-31f248e073ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hide_banner
+    - node.type.meeting_events
+id: node.meeting_events.field_hide_banner
+field_name: field_hide_banner
+entity_type: node
+bundle: meeting_events
+label: 'Hide Banner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

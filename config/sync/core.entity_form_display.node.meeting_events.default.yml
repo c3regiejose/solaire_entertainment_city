@@ -1,15 +1,15 @@
-uuid: fda5188a-8282-4d86-88e4-0c3c16cddabe
+uuid: efa01147-24ab-424b-a566-0834a2cbe354
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.entertainment.field_banner
-    - field.field.node.entertainment.field_category
-    - field.field.node.entertainment.field_mobile_thumbnail
-    - field.field.node.entertainment.field_section
-    - field.field.node.entertainment.field_teaser_summary
+    - field.field.node.meeting_events.field_banner
+    - field.field.node.meeting_events.field_hide_banner
+    - field.field.node.meeting_events.field_mobile_thumbnail
+    - field.field.node.meeting_events.field_section
+    - field.field.node.meeting_events.field_teaser_summary
     - image.style.thumbnail
-    - node.type.entertainment
+    - node.type.meeting_events
   module:
     - field_group
     - image
@@ -40,6 +40,7 @@ third_party_settings:
     group_banner:
       children:
         - field_banner
+        - field_hide_banner
         - field_mobile_thumbnail
       label: Banner
       region: content
@@ -74,11 +75,10 @@ third_party_settings:
       children:
         - title
         - field_teaser_summary
-        - field_category
       label: 'Page Information'
       region: content
       parent_name: group_main
-      weight: 15
+      weight: 14
       format_type: tab
       format_settings:
         classes: ''
@@ -93,7 +93,7 @@ third_party_settings:
       label: 'Other Details'
       region: content
       parent_name: group_main
-      weight: 16
+      weight: 15
       format_type: tab
       format_settings:
         classes: ''
@@ -103,20 +103,20 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
-id: node.entertainment.default
+id: node.meeting_events.default
 targetEntityType: node
-bundle: entertainment
+bundle: meeting_events
 mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 7
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   field_banner:
     type: paragraphs
-    weight: 2
+    weight: 6
     region: content
     settings:
       title: Paragraph
@@ -134,15 +134,16 @@ content:
         convert: '0'
         duplicate: duplicate
     third_party_settings: {  }
-  field_category:
-    type: options_buttons
-    weight: 4
+  field_hide_banner:
+    type: boolean_checkbox
+    weight: 7
     region: content
-    settings: {  }
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_mobile_thumbnail:
     type: image_image
-    weight: 3
+    weight: 9
     region: content
     settings:
       progress_indicator: throbber
@@ -152,7 +153,7 @@ content:
         enabled: true
   field_section:
     type: paragraphs
-    weight: 3
+    weight: 8
     region: content
     settings:
       title: Paragraph
@@ -187,13 +188,13 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 10
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 11
+    weight: 7
     region: content
     settings:
       display_label: true

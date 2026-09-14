@@ -1,0 +1,17 @@
+uuid: 041939bc-874b-4423-bc27-394186cba57a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Meeting Events'
+type: meeting_events
+description: "Use <em>Meeting Events</em> for creating pages for <strong>Solaire North's venues and other amenities</strong> like:  <em>The Theatre</em>,<em>Forums</em>,<em>Weddings</em>, etc."
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

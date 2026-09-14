@@ -1,0 +1,124 @@
+uuid: 8b76a730-b811-4051-b90a-30e29a878450
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.meeting_events
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.block_views
+    - paragraphs.paragraphs_type.highlight_cards
+    - paragraphs.paragraphs_type.icon_cards
+    - paragraphs.paragraphs_type.image_and_text
+    - paragraphs.paragraphs_type.image_gallery
+    - paragraphs.paragraphs_type.information_block
+    - paragraphs.paragraphs_type.promotions
+    - paragraphs.paragraphs_type.side_by_side_content
+    - paragraphs.paragraphs_type.tabs_content_by_reference
+    - paragraphs.paragraphs_type.tabs_content_by_view
+    - paragraphs.paragraphs_type.testimonial_cards
+    - paragraphs.paragraphs_type.webform_block
+  module:
+    - entity_reference_revisions
+id: node.meeting_events.field_section
+field_name: field_section
+entity_type: node
+bundle: meeting_events
+label: Section
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      information_block: information_block
+      promotions: promotions
+      accordion: accordion
+      block_views: block_views
+      highlight_cards: highlight_cards
+      icon_cards: icon_cards
+      image_and_text: image_and_text
+      image_gallery: image_gallery
+      side_by_side_content: side_by_side_content
+      tabs_content_by_reference: tabs_content_by_reference
+      tabs_content_by_view: tabs_content_by_view
+      testimonial_cards: testimonial_cards
+      webform_block: webform_block
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 10
+        enabled: true
+      accordion_items:
+        weight: 26
+        enabled: false
+      banner:
+        weight: 11
+        enabled: false
+      block:
+        weight: 12
+        enabled: false
+      block_views:
+        weight: 29
+        enabled: true
+      highlight_card_item:
+        weight: 31
+        enabled: false
+      highlight_cards:
+        weight: 30
+        enabled: true
+      icon_card_item:
+        weight: 33
+        enabled: false
+      icon_cards:
+        weight: 32
+        enabled: true
+      image_and_text:
+        weight: 34
+        enabled: true
+      image_gallery:
+        weight: 35
+        enabled: true
+      image_gallery_items:
+        weight: 36
+        enabled: false
+      information_block:
+        weight: 2
+        enabled: true
+      main_banner:
+        weight: 15
+        enabled: false
+      promotion_items:
+        weight: 16
+        enabled: false
+      promotions:
+        weight: 9
+        enabled: true
+      side_by_side_content:
+        weight: 41
+        enabled: true
+      tabs_content_by_reference:
+        weight: 42
+        enabled: true
+      tabs_content_by_reference_items:
+        weight: 43
+        enabled: false
+      tabs_content_by_view:
+        weight: 44
+        enabled: true
+      tabs_content_by_view_items:
+        weight: 45
+        enabled: false
+      testimonial_card_item:
+        weight: 47
+        enabled: false
+      testimonial_cards:
+        weight: 46
+        enabled: true
+      webform_block:
+        weight: 48
+        enabled: true
+field_type: entity_reference_revisions
