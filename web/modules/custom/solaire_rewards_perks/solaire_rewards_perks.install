@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Installation hooks for Solaire Rewards & Perks.
+ */
+
+/**
+ * Implements hook_schema().
+ *
+ * The entity storage schema is provided by Drupal's content entity system.
+ */
+function solaire_rewards_perks_schema(): array {
+  return [];
+}

@@ -1,0 +1,7 @@
+name: 'Solaire Rewards & Perks'
+type: module
+description: 'Provides a fieldable custom content entity for storing Rewards & Perks data.'
+package: Solaire
+core_version_requirement: ^11
+dependencies:
+  - drupal:user

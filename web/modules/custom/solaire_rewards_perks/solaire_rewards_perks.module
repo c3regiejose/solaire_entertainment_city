@@ -1,0 +1,8 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Main module file for Solaire Rewards & Perks.
+ */
