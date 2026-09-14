@@ -41,9 +41,6 @@ class TabsContentByReferenceVariablesBuilder {
       }
     }
 
-    // d($result);
-    // die;
-
     return $result;
   }
 

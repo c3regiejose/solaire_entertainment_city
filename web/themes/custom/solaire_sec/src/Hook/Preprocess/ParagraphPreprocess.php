@@ -24,6 +24,7 @@ use Drupal\solaire_sec\Hook\Preprocess\Paragraph\TestimonialCardsVariablesBuilde
 use Psr\Container\ContainerInterface;
 use Drupal\solaire_sec\Hook\Preprocess\Paragraph\InformationBlock;
 use Drupal\solaire_sec\Hook\Preprocess\Paragraph\BlockViewsVariablesBuilder;
+use Drupal\solaire_sec\Hook\Preprocess\Paragraph\PromotionsVariablesBuilder;
 
 class ParagraphPreprocess implements ContainerInjectionInterface {
   /**
@@ -218,7 +219,15 @@ class ParagraphPreprocess implements ContainerInjectionInterface {
       $variables = array_merge($variables, $builder->buildBlockViewsVariables($paragraph));
     }
 
-    // d($variables);
+    // Promotions
+    if ($paragraph->bundle() === 'promotions') {
+      $builder = new PromotionsVariablesBuilder(
+        $this->entityTypeManager,
+        $this->entityRepository
+      );
+      $variables = array_merge($variables, $builder->buildPromotionsVariables($paragraph));
+    }
+
     return $variables;
   }
 }

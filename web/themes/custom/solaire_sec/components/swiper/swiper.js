@@ -8,6 +8,8 @@
         return;
       }
 
+      console.log(this.buildOptions(element));
+
       new Swiper(element, this.buildOptions(element));
     },
 
@@ -50,7 +52,7 @@
         },
 
         centeredSlides: true,
-        slidesPerView: 1.25,
+        slidesPerView: slidesPerView,
         loop: false,
         spaceBetween: 20,
         speed: 600,
