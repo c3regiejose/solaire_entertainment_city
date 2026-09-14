@@ -5,17 +5,27 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.hero_cover
     - field.field.paragraph.side_by_side_content.field_class
+    - field.field.paragraph.side_by_side_content.field_content
     - field.field.paragraph.side_by_side_content.field_id
     - field.field.paragraph.side_by_side_content.field_left_content
     - field.field.paragraph.side_by_side_content.field_right_content
     - field.field.paragraph.side_by_side_content.field_text_alignment
     - field.field.paragraph.side_by_side_content.field_title
     - paragraphs.paragraphs_type.side_by_side_content
+  module:
+    - text
 id: paragraph.side_by_side_content.hero_cover
 targetEntityType: paragraph
 bundle: side_by_side_content
 mode: hero_cover
 content:
+  field_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: ds_content
   field_title:
     type: string
     label: hidden

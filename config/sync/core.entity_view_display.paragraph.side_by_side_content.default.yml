@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.side_by_side_content.field_class
+    - field.field.paragraph.side_by_side_content.field_content
     - field.field.paragraph.side_by_side_content.field_id
     - field.field.paragraph.side_by_side_content.field_left_content
     - field.field.paragraph.side_by_side_content.field_right_content
@@ -25,6 +26,13 @@ content:
       link_rel: canonical
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_id:
     type: string
