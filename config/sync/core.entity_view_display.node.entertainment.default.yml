@@ -3,10 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.entertainment.field_banner
     - field.field.node.entertainment.field_category
+    - field.field.node.entertainment.field_mobile_thumbnail
+    - field.field.node.entertainment.field_section
     - field.field.node.entertainment.field_teaser_summary
     - node.type.entertainment
   module:
+    - ds
+    - entity_reference_revisions
+    - image
     - text
     - user
 id: node.entertainment.default
@@ -14,6 +20,64 @@ targetEntityType: node
 bundle: entertainment
 mode: default
 content:
+  field_banner:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: view_mode_selector
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: ds_content
+  field_mobile_thumbnail:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_section:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: view_mode_selector
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 1
+    region: ds_content
   field_teaser_summary:
     type: text_default
     label: above

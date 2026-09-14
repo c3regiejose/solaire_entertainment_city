@@ -4,17 +4,30 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.card_w_category
+    - field.field.node.entertainment.field_banner
     - field.field.node.entertainment.field_category
+    - field.field.node.entertainment.field_mobile_thumbnail
+    - field.field.node.entertainment.field_section
     - field.field.node.entertainment.field_teaser_summary
     - node.type.entertainment
   module:
     - ds
+    - entity_reference_revisions
     - user
 id: node.entertainment.card_w_category
 targetEntityType: node
 bundle: entertainment
 mode: card_w_category
 content:
+  field_banner:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: view_mode_selector
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_category:
     type: entity_reference_label
     label: hidden
@@ -58,5 +71,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_mobile_thumbnail: true
+  field_section: true
   field_teaser_summary: true
   langcode: true

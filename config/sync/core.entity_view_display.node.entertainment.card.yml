@@ -4,10 +4,14 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.card
+    - field.field.node.entertainment.field_banner
     - field.field.node.entertainment.field_category
+    - field.field.node.entertainment.field_mobile_thumbnail
+    - field.field.node.entertainment.field_section
     - field.field.node.entertainment.field_teaser_summary
     - node.type.entertainment
   module:
+    - image
     - text
     - user
 id: node.entertainment.card
@@ -15,6 +19,17 @@ targetEntityType: node
 bundle: entertainment
 mode: card
 content:
+  field_mobile_thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_teaser_summary:
     type: text_default
     label: hidden
@@ -28,5 +43,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_banner: true
   field_category: true
+  field_section: true
   langcode: true
