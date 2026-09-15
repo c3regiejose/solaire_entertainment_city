@@ -1,0 +1,6 @@
+entity.solaire_rewards_perk.collection:
+  title: 'Rewards & Perks'
+  description: 'Manage Rewards & Perks.'
+  route_name: entity.solaire_rewards_perk.collection
+  parent: system.admin_content
+  weight: 50

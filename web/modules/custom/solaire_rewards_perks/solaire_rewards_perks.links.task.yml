@@ -1,0 +1,4 @@
+entity.solaire_rewards_perk.collection:
+  title: 'List'
+  route_name: entity.solaire_rewards_perk.collection
+  base_route: entity.solaire_rewards_perk.collection

@@ -1,0 +1,5 @@
+entity.solaire_rewards_perk.add_form:
+  route_name: entity.solaire_rewards_perk.add_form
+  title: 'Add Rewards & Perk'
+  appears_on:
+    - entity.solaire_rewards_perk.collection

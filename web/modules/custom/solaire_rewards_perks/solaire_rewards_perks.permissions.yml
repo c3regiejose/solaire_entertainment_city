@@ -1,0 +1,4 @@
+administer solaire rewards perks:
+  title: 'Administer Rewards & Perks'
+  description: 'Create, edit, and delete Rewards & Perks entities.'
+  restrict access: true

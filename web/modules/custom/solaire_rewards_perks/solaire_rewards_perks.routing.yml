@@ -1,0 +1,31 @@
+entity.solaire_rewards_perk.collection:
+  path: '/admin/content/rewards-perks'
+  defaults:
+    _entity_list: 'solaire_rewards_perk'
+    _title: 'Rewards & Perks'
+  requirements:
+    _permission: 'administer solaire rewards perks'
+
+entity.solaire_rewards_perk.add_form:
+  path: '/admin/content/rewards-perks/add'
+  defaults:
+    _entity_form: 'solaire_rewards_perk.add'
+    _title: 'Add Rewards & Perk'
+  requirements:
+    _permission: 'administer solaire rewards perks'
+
+entity.solaire_rewards_perk.edit_form:
+  path: '/admin/content/rewards-perks/{solaire_rewards_perk}/edit'
+  defaults:
+    _entity_form: 'solaire_rewards_perk.edit'
+    _title: 'Edit Rewards & Perk'
+  requirements:
+    _permission: 'administer solaire rewards perks'
+
+entity.solaire_rewards_perk.delete_form:
+  path: '/admin/content/rewards-perks/{solaire_rewards_perk}/delete'
+  defaults:
+    _entity_form: 'solaire_rewards_perk.delete'
+    _title: 'Delete Rewards & Perk'
+  requirements:
+    _permission: 'administer solaire rewards perks'
