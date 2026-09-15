@@ -28,6 +28,7 @@
         "drupal/devel": "^5.5",
         "drupal/ds": "^3.37",
         "drupal/entity_share": "^3.13",
+        "drupal/entityqueue": "^1.12",
         "drupal/field_formatter_range": "^2.0",
         "drupal/field_group": "^4.0",
         "drupal/field_image_style": "^2.0",
